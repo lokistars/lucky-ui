@@ -1,5 +1,7 @@
 {
+   // 继承了npm包，ts默认的配置，
   "extends": "@tsconfig/node20/tsconfig.json",
+   // 需要编译的文件
   "include": [
     "vite.config.*",
     "vitest.config.*",
@@ -7,13 +9,15 @@
     "nightwatch.conf.*",
     "playwright.config.*"
   ],
+  // 编译配置项
   "compilerOptions": {
     "composite": true,
     "noEmit": true,
     "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.node.tsbuildinfo",
-
+    // 指定ts要被编译成的模块化规范，比如给服务器用的commonjs，前端常用的esm
     "module": "ESNext",
     "moduleResolution": "Bundler",
-    "types": ["node"]
+    // 加载的声明文件包
+    "types": ["node","element-plus/global"]
   }
 }

@@ -1,5 +1,6 @@
 {
   "files": [],
+  // 引入其他项目,根文件
   "references": [
     {
       "path": "./tsconfig.node.json"
