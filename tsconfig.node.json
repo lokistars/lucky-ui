@@ -1,7 +1,7 @@
 {
-   // 继承了npm包，ts默认的配置，
+  // 继承了npm包，ts默认的配置，
   "extends": "@tsconfig/node20/tsconfig.json",
-   // 需要编译的文件
+  // 需要编译的文件
   "include": [
     "vite.config.*",
     "vitest.config.*",
@@ -18,6 +18,9 @@
     "module": "ESNext",
     "moduleResolution": "Bundler",
     // 加载的声明文件包
-    "types": ["node","element-plus/global"]
+    "types": [
+      "node",
+      "naive-ui/volar"
+    ]
   }
 }

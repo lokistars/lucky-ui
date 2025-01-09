@@ -10,7 +10,10 @@
     "baseUrl": ".",
     // 路径映射，相对于baseUrl
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "@icon/*": [
+        "./src/components/icons/*"
+      ]
     }
   }
 }
